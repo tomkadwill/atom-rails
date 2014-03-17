@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable atom-rails': 'atom-rails:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'atom-rails'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'atom-rails:toggle' }
+      ]
+    ]
+  }
+]
