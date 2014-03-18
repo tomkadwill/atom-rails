@@ -7,7 +7,8 @@ class Model
 	
 	path: ->
 		if @currentFile.match /_controller\.rb$/
-			@getModel @currentFile
+			@getModelPath @currentFile
 			
-	getModel: (currentFile) ->
-		"/Users/tomkadwill/.atom/packages/atom-rails/README.md"
+	getModelPath: (currentFile) ->
+		path = currentFile.replace /s_controller\.rb$/, '.rb'
+		path = path.replace 'controllers', 'models'

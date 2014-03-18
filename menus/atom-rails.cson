@@ -1,7 +1,7 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
   '.overlayer':
-      'Enable atom-rails': 'atom-rails:toggle'
+      'Enable atom-rails': 'atom-rails:switch-to-model'
 
 'menu': [
   {
@@ -9,7 +9,7 @@
     'submenu': [
       'label': 'atom-rails'
       'submenu': [
-        { 'label': 'Toggle', 'command': 'atom-rails:toggle' }
+        { 'label': 'Switch To Model', 'command': 'atom-rails:switch-to-model' }
       ]
     ]
   }
