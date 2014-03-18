@@ -7,7 +7,7 @@
   "activationEvents": [
     "atom-rails:switch-to-model"
   ],
-  "repository": "https://github.com/atom/atom-rails",
+  "repository": "https://github.com/tomkadwill/atom-rails",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
