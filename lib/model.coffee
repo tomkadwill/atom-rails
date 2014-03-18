@@ -12,3 +12,4 @@ class Model
 	getModelPath: (currentFile) ->
 		path = currentFile.replace /s_controller\.rb$/, '.rb'
 		path = path.replace 'controllers', 'models'
+		return path if fs.existsSync path
