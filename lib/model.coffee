@@ -10,6 +10,14 @@ class Model
 			@getModelPath @currentFile
 			
 	getModelPath: (currentFile) ->
-		path = currentFile.replace /s_controller\.rb$/, '.rb'
-		path = path.replace 'controllers', 'models'
-		return path if fs.existsSync path
+		currentFile = currentFile.replace /s_controller\.rb$/, '.rb'
+		path = currentFile.replace 'controllers', 'models'
+		if fs.existsSync path
+			return path
+		else
+			file = currentFile.replace(/^.*[\\\/]/, '')
+			start = currentFile.indexOf("controllers")
+			end = currentFile.indexOf(file)
+			pathToReplace = currentFile.substr(start, end)
+			path = currentFile.replace pathToReplace, 'models/' + file
+			return path if fs.existsSync path

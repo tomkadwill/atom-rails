@@ -13,7 +13,9 @@ describe 'Model', ->
 	    expect(model.path(usersController)).toBe userModel
 			
     it 'returns model when controller is in different directory path', ->
-		  # pending	
+      adminUsersController = Path.join rootPath, 'app/controllers/admin/users_controller.rb'
+      model = new Model(adminUsersController)
+      expect(model.path(adminUsersController)).toBe userModel
 
 		it 'does not return model file if model file does not exist', ->
 			sessionsController = Path.join rootPath, 'app/controllers/sessions_controller.rb'
