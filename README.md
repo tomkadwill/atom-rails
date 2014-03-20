@@ -12,6 +12,7 @@ Navigate between files using the commands below.
 ### Commands
 
 * `ctrl-alt-m` - Switch from controller to associated model
+* `ctrl-alt-r` - Switch to related file (currently supports switching from model to db/schema only)
 
 ## TODO
 
