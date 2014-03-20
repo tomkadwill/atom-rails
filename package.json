@@ -1,7 +1,7 @@
 {
   "name": "atom-rails",
   "main": "./lib/atom-rails",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Commands for Ruby on Rails development",
   "author": "Tom Kadwill",
   "activationEvents": [
