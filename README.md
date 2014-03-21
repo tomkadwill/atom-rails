@@ -15,6 +15,7 @@ Navigate between files using the commands below.
 * `ctrl-alt-r` - Switch to related file 
 	* model -> db/schema
 	* controller -> helper
+	* view -> controller
 
 ## TODO
 
