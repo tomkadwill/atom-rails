@@ -5,8 +5,9 @@
   "description": "Commands for Ruby on Rails development",
   "author": "Tom Kadwill",
   "activationEvents": [
-    "atom-rails:switch-to-model"
-  ],
+    "atom-rails:switch-to-model",
+    "atom-rails:related"
+],
   "repository": "https://github.com/tomkadwill/atom-rails",
   "license": "MIT",
   "engines": {
