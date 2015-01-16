@@ -1,4 +1,5 @@
 Model = require './model'
+File = require './file'
 Related = require './related'
 
 module.exports =
@@ -10,10 +11,10 @@ module.exports =
 
   switchToModel: ->
     currentFile = atom.workspace.getActiveEditor().getPath()
-    file = new Model(currentFile).path()
-    atom.workspaceView.open(file) if file?
-    
+    filePath = new Model(currentFile).path()
+    new File().openFile(filePath)
+
   related: ->
     currentFile = atom.workspace.getActiveEditor().getPath()
-    file = new Related(currentFile).path()
-    atom.workspaceView.open(file) if file?
+    filePath = new Related(currentFile).path()
+    new File().openFile(filePath)

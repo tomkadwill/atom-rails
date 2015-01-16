@@ -7,6 +7,6 @@
 
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
-'.editor':
+'.atom_text_editor':
   'ctrl-alt-m': 'atom-rails:switch-to-model'
   'ctrl-alt-r': 'atom-rails:related'
