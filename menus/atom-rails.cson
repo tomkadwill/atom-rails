@@ -5,6 +5,7 @@
     'submenu': [
       'label': 'atom-rails'
       'submenu': [
+        { 'label': 'Go To', 'command': 'atom-rails:go-to' }
         { 'label': 'Switch To Model', 'command': 'atom-rails:switch-to-model' }
         { 'label': 'Related', 'command': 'atom-rails:related' }
       ]

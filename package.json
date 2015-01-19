@@ -5,6 +5,7 @@
   "description": "Commands for Ruby on Rails development",
   "author": "Tom Kadwill",
   "activationEvents": [
+    "atom-rails:go-to",
     "atom-rails:switch-to-model",
     "atom-rails:related"
   ],

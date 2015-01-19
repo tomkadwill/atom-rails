@@ -9,4 +9,5 @@
 # https://atom.io/docs/latest/advanced/keymaps
 '.atom_text_editor':
   'ctrl-alt-m': 'atom-rails:switch-to-model'
+  'ctrl-alt-g': 'atom-rails:go-to'
   'ctrl-alt-r': 'atom-rails:related'
